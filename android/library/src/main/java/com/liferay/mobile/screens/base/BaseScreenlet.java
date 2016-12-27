@@ -214,7 +214,7 @@ public abstract class BaseScreenlet<V extends BaseViewModel, I extends Interacto
 		assignView(LayoutInflater.from(getContext()).inflate(layoutId, null));
 	}
 
-	protected void assignView(View view) {
+	public void assignView(View view) {
 		if (!isInEditMode()) {
 			screenletView = view;
 
